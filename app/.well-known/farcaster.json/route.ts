@@ -4,26 +4,21 @@ import { APP_URL } from "../../../lib/constants";
 export async function GET() {
   const farcasterConfig = {
   // TODO: Add your own account association
-    accountAssociation: {
-    "header": "eyJmaWQiOjMyODg1NSwidHlwZSI6ImF1dGgiLCJrZXkiOiIweERCOTczZjliNWI0MDhFMkZFNjNFQ2UzNjBEYjFjODU5YjQ5NDFFRTcifQ",
-    "payload": "eyJkb21haW4iOiJmYXJjYXN0ZXItbWluaWFwcC10ZW1wbGF0ZS1lYm9uLnZlcmNlbC5hcHAifQ",
-    "signature": "1bH6yx1yjJgF2olNGcmhAgsbS229TmERlvHsktnOqA88aDMQAPm+WSFEgqfIFtcRFIUsewD5Of72EVNKufxX3Bs="
+   {
+  "accountAssociation": {
+    "header": "eyJmaWQiOjUyNjQwMCwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweGU4MTNiQTIzOWJmNzRiYjEwOEU2NTYzMUJiNWY0QzgzNDhiMjA5MzYifQ",
+    "payload": "eyJkb21haW4iOiJvZ2Ryb3BzLnh5eiJ9",
+    "signature": "rGvyen3p0IXPsKNTB3C+75w1Cvo689Irm6Hx7kC1CD13gdyJkL8+I0jgue0FAz4UOYGLmJZIuzqnwzQlrMaVNxw="
   },
-    frame: {
-      version: "1",
-      name: "Trankil Farcaster MiniApp",
-      iconUrl: `${APP_URL}/images/icon.png`,
-      homeUrl: `${APP_URL}`,
-      imageUrl: `${APP_URL}/images/feed.png`,
-      screenshotUrls: [],
-      tags: ["Base", "farcaster", "miniapp", "template"],
-      primaryCategory: "developer-tools",
-      buttonTitle: "Launch Template",
-      splashImageUrl: `${APP_URL}/images/splash.png`,
-      splashBackgroundColor: "#ffffff",
-      webhookUrl: `${APP_URL}/api/webhook`,
-    },
-  };
-
-  return NextResponse.json(farcasterConfig);
+  "frame": {
+    "version": "1",
+    "name": "Example Frame",
+    "iconUrl": "https://ogdrops.xyz/icon.png",
+    "homeUrl": "https://ogdrops.xyz",
+    "imageUrl": "https://ogdrops.xyz/image.png",
+    "buttonTitle": "Check this out",
+    "splashImageUrl": "https://ogdrops.xyz/splash.png",
+    "splashBackgroundColor": "#eeccff",
+    "webhookUrl": "https://ogdrops.xyz/api/webhook"
+  }
 }
