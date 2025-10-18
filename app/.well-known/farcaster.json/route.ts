@@ -4,26 +4,21 @@ import { APP_URL } from "../../../lib/constants";
 export async function GET() {
   const farcasterConfig = {
   // TODO: Add your own account association
-    accountAssociation: {
-    "header": "eyJmaWQiOjMyODg1NSwidHlwZSI6ImF1dGgiLCJrZXkiOiIweERCOTczZjliNWI0MDhFMkZFNjNFQ2UzNjBEYjFjODU5YjQ5NDFFRTcifQ",
-    "payload": "eyJkb21haW4iOiJmYXJjYXN0ZXItbWluaWFwcC10ZW1wbGF0ZS1lYm9uLnZlcmNlbC5hcHAifQ",
-    "signature": "1bH6yx1yjJgF2olNGcmhAgsbS229TmERlvHsktnOqA88aDMQAPm+WSFEgqfIFtcRFIUsewD5Of72EVNKufxX3Bs="
+{
+  "accountAssociation": {
+    "header": "eyJmaWQiOjUyNjQwMCwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweGU4MTNiQTIzOWJmNzRiYjEwOEU2NTYzMUJiNWY0QzgzNDhiMjA5MzYifQ",
+    "payload": "eyJkb21haW4iOiJmYXJjYXN0ZXItbWluaWFwcC1vZy52ZXJjZWwuYXBwIn0",
+    "signature": "cr6yWo/gKEkJHGJia9m7TMcdlkrENhjGlWvE9QkoEQUzhtTCEGbgP+Y7lIA/UhZqeJ5EcD5oroYGBLvKgKd+Dxw="
   },
-    frame: {
-      version: "1",
-      name: "Trankil Farcaster MiniApp",
-      iconUrl: `${APP_URL}/images/icon.png`,
-      homeUrl: `${APP_URL}`,
-      imageUrl: `${APP_URL}/images/feed.png`,
-      screenshotUrls: [],
-      tags: ["Base", "farcaster", "miniapp", "template"],
-      primaryCategory: "developer-tools",
-      buttonTitle: "Launch Template",
-      splashImageUrl: `${APP_URL}/images/splash.png`,
-      splashBackgroundColor: "#ffffff",
-      webhookUrl: `${APP_URL}/api/webhook`,
-    },
-  };
-
-  return NextResponse.json(farcasterConfig);
+  "frame": {
+    "version": "1",
+    "name": "Example Frame",
+    "iconUrl": "https://farcaster-miniapp-og.vercel.app/icon.png",
+    "homeUrl": "https://farcaster-miniapp-og.vercel.app",
+    "imageUrl": "https://farcaster-miniapp-og.vercel.app/image.png",
+    "buttonTitle": "Check this out",
+    "splashImageUrl": "https://farcaster-miniapp-og.vercel.app/splash.png",
+    "splashBackgroundColor": "#eeccff",
+    "webhookUrl": "https://farcaster-miniapp-og.vercel.app/api/webhook"
+  }
 }
