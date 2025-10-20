@@ -1,6 +1,6 @@
 # Monad Farcaster MiniApp Template
 
-The template demonstrates all Mini App capabilities and lets you easily modify it, so you can build Mini Apps.
+ The template demonstrates all Mini App capabilities and lets you easily modify it, so you can build Mini Apps.
 
 ## Cloning the Template
 
