@@ -10,7 +10,7 @@ You can the following command to clone the Mini App template to your local machi
 git clone https://github.com/monad-developers/monad-miniapp-template.git
 ```
 
-### Install the dependencies
+## Install the dependencies
 
 ```
 yarn
